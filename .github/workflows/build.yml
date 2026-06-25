@@ -37,7 +37,7 @@ jobs:
         with:
           images: ${{ env.IMAGE }}
           tags: |
-            type=sha              # sha-<short> — your immutable promote-me tag
+            type=sha
             type=ref,event=branch
             type=ref,event=pr
 
